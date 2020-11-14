@@ -43,7 +43,7 @@
             this.btnBack.Location = new System.Drawing.Point(143, 128);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 51;
+            this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -53,7 +53,7 @@
             this.btnXacNhan.Location = new System.Drawing.Point(46, 128);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
-            this.btnXacNhan.TabIndex = 52;
+            this.btnXacNhan.TabIndex = 4;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
@@ -63,7 +63,7 @@
             this.tBmaTD.Location = new System.Drawing.Point(84, 6);
             this.tBmaTD.Name = "tBmaTD";
             this.tBmaTD.Size = new System.Drawing.Size(162, 20);
-            this.tBmaTD.TabIndex = 49;
+            this.tBmaTD.TabIndex = 1;
             // 
             // lbVongDau
             // 
@@ -99,7 +99,7 @@
             this.cBvongDau.Location = new System.Drawing.Point(84, 87);
             this.cBvongDau.Name = "cBvongDau";
             this.cBvongDau.Size = new System.Drawing.Size(162, 21);
-            this.cBvongDau.TabIndex = 53;
+            this.cBvongDau.TabIndex = 3;
             // 
             // dTPlichThiDau
             // 
@@ -108,7 +108,7 @@
             this.dTPlichThiDau.Location = new System.Drawing.Point(84, 45);
             this.dTPlichThiDau.Name = "dTPlichThiDau";
             this.dTPlichThiDau.Size = new System.Drawing.Size(162, 20);
-            this.dTPlichThiDau.TabIndex = 54;
+            this.dTPlichThiDau.TabIndex = 2;
             this.dTPlichThiDau.Value = new System.DateTime(2020, 11, 12, 0, 0, 0, 0);
             // 
             // ThemLichThiDau
@@ -125,7 +125,8 @@
             this.Controls.Add(this.lbNgayGio);
             this.Controls.Add(this.lbMaTD);
             this.Name = "ThemLichThiDau";
-            this.Text = "ThemLichThiDau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tạo Lịch Thi Đấu";
             this.Load += new System.EventHandler(this.ThemLichThiDau_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

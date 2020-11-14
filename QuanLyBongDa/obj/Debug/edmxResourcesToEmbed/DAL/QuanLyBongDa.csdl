@@ -88,7 +88,6 @@
     <Property Name="DoiChuNha" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="DoiKhach" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="NgayThiDau" Type="DateTime" Precision="0" />
-    <Property Name="GioThiDau" Type="Time" Precision="7" />
     <Property Name="SanThiDau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="MaVD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="DOIBONG" Relationship="Self.FK__LICHTHIDA__DoiKh__2F10007B" FromRole="LICHTHIDAU" ToRole="DOIBONG" />

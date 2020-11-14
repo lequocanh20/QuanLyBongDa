@@ -41,9 +41,9 @@
             this.lbDoiBong = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbTenCT = new System.Windows.Forms.Label();
-            this.tBngaySinh = new System.Windows.Forms.TextBox();
             this.cBdoiBong = new System.Windows.Forms.ComboBox();
             this.cBloaiCT = new System.Windows.Forms.ComboBox();
+            this.dTPngaySinh = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dGVcauThu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,16 +55,18 @@
             this.dGVcauThu.Margin = new System.Windows.Forms.Padding(2);
             this.dGVcauThu.Name = "dGVcauThu";
             this.dGVcauThu.RowTemplate.Height = 28;
+            this.dGVcauThu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dGVcauThu.Size = new System.Drawing.Size(629, 272);
             this.dGVcauThu.TabIndex = 56;
             // 
             // tBmaCT
             // 
+            this.tBmaCT.Enabled = false;
             this.tBmaCT.Location = new System.Drawing.Point(232, 10);
             this.tBmaCT.Margin = new System.Windows.Forms.Padding(2);
             this.tBmaCT.Name = "tBmaCT";
             this.tBmaCT.Size = new System.Drawing.Size(154, 20);
-            this.tBmaCT.TabIndex = 55;
+            this.tBmaCT.TabIndex = 1;
             // 
             // lbMaCauThu
             // 
@@ -82,7 +84,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(61, 33);
-            this.btnSua.TabIndex = 53;
+            this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -93,7 +95,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(61, 33);
-            this.btnXoa.TabIndex = 52;
+            this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -104,7 +106,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(61, 33);
-            this.btnThem.TabIndex = 51;
+            this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm ";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -115,7 +117,7 @@
             this.tBghiChu.Margin = new System.Windows.Forms.Padding(2);
             this.tBghiChu.Name = "tBghiChu";
             this.tBghiChu.Size = new System.Drawing.Size(154, 20);
-            this.tBghiChu.TabIndex = 50;
+            this.tBghiChu.TabIndex = 6;
             // 
             // tBtenCT
             // 
@@ -123,7 +125,7 @@
             this.tBtenCT.Margin = new System.Windows.Forms.Padding(2);
             this.tBtenCT.Name = "tBtenCT";
             this.tBtenCT.Size = new System.Drawing.Size(154, 20);
-            this.tBtenCT.TabIndex = 49;
+            this.tBtenCT.TabIndex = 2;
             // 
             // lbNgaySinh
             // 
@@ -175,14 +177,6 @@
             this.lbTenCT.TabIndex = 45;
             this.lbTenCT.Text = "Cầu thủ: ";
             // 
-            // tBngaySinh
-            // 
-            this.tBngaySinh.Location = new System.Drawing.Point(507, 42);
-            this.tBngaySinh.Margin = new System.Windows.Forms.Padding(2);
-            this.tBngaySinh.Name = "tBngaySinh";
-            this.tBngaySinh.Size = new System.Drawing.Size(154, 20);
-            this.tBngaySinh.TabIndex = 49;
-            // 
             // cBdoiBong
             // 
             this.cBdoiBong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -194,12 +188,13 @@
             this.cBdoiBong.Margin = new System.Windows.Forms.Padding(2);
             this.cBdoiBong.Name = "cBdoiBong";
             this.cBdoiBong.Size = new System.Drawing.Size(154, 21);
-            this.cBdoiBong.TabIndex = 57;
+            this.cBdoiBong.TabIndex = 5;
             // 
             // cBloaiCT
             // 
             this.cBloaiCT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBloaiCT.FormattingEnabled = true;
+            this.cBloaiCT.ItemHeight = 13;
             this.cBloaiCT.Items.AddRange(new object[] {
             "Trong nước ",
             "Ngoài nước"});
@@ -207,13 +202,22 @@
             this.cBloaiCT.Margin = new System.Windows.Forms.Padding(2);
             this.cBloaiCT.Name = "cBloaiCT";
             this.cBloaiCT.Size = new System.Drawing.Size(154, 21);
-            this.cBloaiCT.TabIndex = 58;
+            this.cBloaiCT.TabIndex = 3;
+            // 
+            // dTPngaySinh
+            // 
+            this.dTPngaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dTPngaySinh.Location = new System.Drawing.Point(507, 42);
+            this.dTPngaySinh.Name = "dTPngaySinh";
+            this.dTPngaySinh.Size = new System.Drawing.Size(154, 20);
+            this.dTPngaySinh.TabIndex = 4;
             // 
             // QLCauThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dTPngaySinh);
             this.Controls.Add(this.cBdoiBong);
             this.Controls.Add(this.cBloaiCT);
             this.Controls.Add(this.dGVcauThu);
@@ -223,7 +227,6 @@
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.tBghiChu);
-            this.Controls.Add(this.tBngaySinh);
             this.Controls.Add(this.tBtenCT);
             this.Controls.Add(this.lbNgaySinh);
             this.Controls.Add(this.lbLoaiCauThu);
@@ -231,7 +234,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTenCT);
             this.Name = "QLCauThu";
-            this.Text = "QLCauThu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Cầu Thủ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QLCauThu_FormClosing);
             this.Load += new System.EventHandler(this.QLCauThu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVcauThu)).EndInit();
@@ -254,8 +258,8 @@
         private System.Windows.Forms.Label lbDoiBong;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbTenCT;
-        private System.Windows.Forms.TextBox tBngaySinh;
         private System.Windows.Forms.ComboBox cBdoiBong;
         private System.Windows.Forms.ComboBox cBloaiCT;
+        private System.Windows.Forms.DateTimePicker dTPngaySinh;
     }
 }

@@ -76,7 +76,7 @@ namespace QuanLyBongDa
         {
             QLGVDBDQGEntities qlbddel = new QLGVDBDQGEntities();
             string madoibong = tBmaDB.Text;
-            DOIBONG DB = qlbddel.DOIBONGs.Where(db  => Convert.ToString(db.MaDB) == madoibong).SingleOrDefault();
+            DOIBONG DB = qlbddel.DOIBONGs.Where(db  => db.MaDB == madoibong).SingleOrDefault();
             if (DB != null)
             {
                 qlbddel.DOIBONGs.Remove(DB);
@@ -94,7 +94,7 @@ namespace QuanLyBongDa
         {
             QLGVDBDQGEntities qlbdedit = new QLGVDBDQGEntities();
             string madoibong = tBmaDB.Text;
-            DOIBONG DB = qlbdedit.DOIBONGs.Where(db => Convert.ToString(db.MaDB) == madoibong).SingleOrDefault();
+            DOIBONG DB = qlbdedit.DOIBONGs.Where(db => db.MaDB == madoibong).SingleOrDefault();
             if (DB != null)
             {
                 DB.MaDB = Convert.ToString(tBmaDB.Text);

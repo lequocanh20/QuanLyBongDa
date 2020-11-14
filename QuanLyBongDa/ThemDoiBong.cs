@@ -22,7 +22,7 @@ namespace QuanLyBongDa
         {
             QLGVDBDQGEntities qlbdadd = new QLGVDBDQGEntities();
             string madoibong = "";
-            DOIBONG DB = qlbdadd.DOIBONGs.Where(db => Convert.ToString(db.MaDB) == madoibong).SingleOrDefault();
+            DOIBONG DB = qlbdadd.DOIBONGs.Where(db => db.MaDB == madoibong).SingleOrDefault();
             if (DB == null)
             {
                 DOIBONG item = new DOIBONG();
@@ -32,6 +32,9 @@ namespace QuanLyBongDa
                 qlbdadd.DOIBONGs.Add(item);
                 qlbdadd.SaveChanges();
                 MessageBox.Show("Đã nhập vào thành công", "Thông báo");
+                tBmaDB.Text = "";
+                tBtenDB.Text = "";
+                tBsanNha.Text = "";
                 ql.xemdulieu();
             }
             else

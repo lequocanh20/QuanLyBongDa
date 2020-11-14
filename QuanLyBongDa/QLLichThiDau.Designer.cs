@@ -52,7 +52,7 @@
             this.btnSua.Location = new System.Drawing.Point(360, 135);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 35;
+            this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -62,7 +62,7 @@
             this.btnXoa.Location = new System.Drawing.Point(360, 88);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 36;
+            this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -72,7 +72,7 @@
             this.btnThem.Location = new System.Drawing.Point(360, 46);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 37;
+            this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -82,6 +82,7 @@
             this.dGVlichThiDau.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVlichThiDau.Location = new System.Drawing.Point(32, 200);
             this.dGVlichThiDau.Name = "dGVlichThiDau";
+            this.dGVlichThiDau.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dGVlichThiDau.Size = new System.Drawing.Size(739, 238);
             this.dGVlichThiDau.TabIndex = 34;
             // 
@@ -91,7 +92,7 @@
             this.tBmaTD.Location = new System.Drawing.Point(348, 12);
             this.tBmaTD.Name = "tBmaTD";
             this.tBmaTD.Size = new System.Drawing.Size(162, 20);
-            this.tBmaTD.TabIndex = 30;
+            this.tBmaTD.TabIndex = 1;
             // 
             // lbVongDau
             // 
@@ -153,14 +154,14 @@
             this.tBsanThiDau.Location = new System.Drawing.Point(555, 93);
             this.tBsanThiDau.Name = "tBsanThiDau";
             this.tBsanThiDau.Size = new System.Drawing.Size(216, 20);
-            this.tBsanThiDau.TabIndex = 28;
+            this.tBsanThiDau.TabIndex = 5;
             // 
             // tBngayGio
             // 
             this.tBngayGio.Location = new System.Drawing.Point(98, 90);
             this.tBngayGio.Name = "tBngayGio";
             this.tBngayGio.Size = new System.Drawing.Size(132, 20);
-            this.tBngayGio.TabIndex = 29;
+            this.tBngayGio.TabIndex = 4;
             // 
             // cBvongDau
             // 
@@ -169,7 +170,7 @@
             this.cBvongDau.Location = new System.Drawing.Point(98, 135);
             this.cBvongDau.Name = "cBvongDau";
             this.cBvongDau.Size = new System.Drawing.Size(132, 21);
-            this.cBvongDau.TabIndex = 38;
+            this.cBvongDau.TabIndex = 6;
             // 
             // cBdoi1
             // 
@@ -178,7 +179,7 @@
             this.cBdoi1.Location = new System.Drawing.Point(98, 45);
             this.cBdoi1.Name = "cBdoi1";
             this.cBdoi1.Size = new System.Drawing.Size(219, 21);
-            this.cBdoi1.TabIndex = 38;
+            this.cBdoi1.TabIndex = 2;
             // 
             // cBdoi2
             // 
@@ -187,7 +188,7 @@
             this.cBdoi2.Location = new System.Drawing.Point(555, 45);
             this.cBdoi2.Name = "cBdoi2";
             this.cBdoi2.Size = new System.Drawing.Size(216, 21);
-            this.cBdoi2.TabIndex = 38;
+            this.cBdoi2.TabIndex = 3;
             // 
             // QLLichThiDau
             // 
@@ -211,7 +212,8 @@
             this.Controls.Add(this.lbMaDoi1);
             this.Controls.Add(this.lbMaTD);
             this.Name = "QLLichThiDau";
-            this.Text = "QLLichThiDau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Lịch Thi Đấu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QLLichThiDau_FormClosing);
             this.Load += new System.EventHandler(this.QLLichThiDau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVlichThiDau)).EndInit();

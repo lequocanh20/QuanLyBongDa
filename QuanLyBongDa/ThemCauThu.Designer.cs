@@ -51,7 +51,7 @@
             this.dTPngaySinh.Location = new System.Drawing.Point(321, 46);
             this.dTPngaySinh.Name = "dTPngaySinh";
             this.dTPngaySinh.Size = new System.Drawing.Size(154, 20);
-            this.dTPngaySinh.TabIndex = 74;
+            this.dTPngaySinh.TabIndex = 4;
             this.dTPngaySinh.Value = new System.DateTime(2020, 11, 11, 0, 0, 0, 0);
             // 
             // cBdoiBong
@@ -65,7 +65,7 @@
             this.cBdoiBong.Margin = new System.Windows.Forms.Padding(2);
             this.cBdoiBong.Name = "cBdoiBong";
             this.cBdoiBong.Size = new System.Drawing.Size(96, 21);
-            this.cBdoiBong.TabIndex = 72;
+            this.cBdoiBong.TabIndex = 5;
             // 
             // cBloaiCT
             // 
@@ -78,7 +78,7 @@
             this.cBloaiCT.Margin = new System.Windows.Forms.Padding(2);
             this.cBloaiCT.Name = "cBloaiCT";
             this.cBloaiCT.Size = new System.Drawing.Size(96, 21);
-            this.cBloaiCT.TabIndex = 73;
+            this.cBloaiCT.TabIndex = 3;
             // 
             // tBmaCT
             // 
@@ -86,7 +86,7 @@
             this.tBmaCT.Margin = new System.Windows.Forms.Padding(2);
             this.tBmaCT.Name = "tBmaCT";
             this.tBmaCT.Size = new System.Drawing.Size(94, 20);
-            this.tBmaCT.TabIndex = 71;
+            this.tBmaCT.TabIndex = 1;
             // 
             // lbMaCauThu
             // 
@@ -104,7 +104,7 @@
             this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(61, 33);
-            this.btnBack.TabIndex = 68;
+            this.btnBack.TabIndex = 8;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -115,7 +115,7 @@
             this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(61, 33);
-            this.btnXacNhan.TabIndex = 67;
+            this.btnXacNhan.TabIndex = 7;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
@@ -126,7 +126,7 @@
             this.tBghiChu.Margin = new System.Windows.Forms.Padding(2);
             this.tBghiChu.Name = "tBghiChu";
             this.tBghiChu.Size = new System.Drawing.Size(154, 20);
-            this.tBghiChu.TabIndex = 66;
+            this.tBghiChu.TabIndex = 6;
             // 
             // tBtenCT
             // 
@@ -134,7 +134,7 @@
             this.tBtenCT.Margin = new System.Windows.Forms.Padding(2);
             this.tBtenCT.Name = "tBtenCT";
             this.tBtenCT.Size = new System.Drawing.Size(154, 20);
-            this.tBtenCT.TabIndex = 65;
+            this.tBtenCT.TabIndex = 2;
             // 
             // lbNgaySinh
             // 
@@ -206,7 +206,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTenCT);
             this.Name = "ThemCauThu";
-            this.Text = "ThemCauThu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Nhập cầu thủ";
             this.Load += new System.EventHandler(this.ThemCauThu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

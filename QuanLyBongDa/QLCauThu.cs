@@ -37,8 +37,8 @@ namespace QuanLyBongDa
             tBmaCT.DataBindings.Add(new Binding("Text", dGVcauThu.DataSource, "MaCT"));
             tBtenCT.DataBindings.Clear();
             tBtenCT.DataBindings.Add(new Binding("Text", dGVcauThu.DataSource, "TenCT"));
-            tBngaySinh.DataBindings.Clear();
-            tBngaySinh.DataBindings.Add(new Binding("Text", dGVcauThu.DataSource, "NgaySinh", true, DataSourceUpdateMode.OnValidation, "", "dd/MM/yyyy"));
+            dTPngaySinh.DataBindings.Clear();
+            dTPngaySinh.DataBindings.Add(new Binding("Text", dGVcauThu.DataSource, "NgaySinh", true, DataSourceUpdateMode.OnValidation, "", "MM/dd/yyyy"));
             cBloaiCT.DataSource = qlbd.LOAICAUTHUs.ToList();
             cBloaiCT.DisplayMember = "TenLoaiCT";
             cBloaiCT.DataBindings.Clear();
@@ -91,7 +91,7 @@ namespace QuanLyBongDa
         {
             QLGVDBDQGEntities qlbddel = new QLGVDBDQGEntities();
             string macauthu = tBmaCT.Text;
-            CAUTHU CT = qlbddel.CAUTHUs.Where(ct => Convert.ToString(ct.MaCT) == macauthu).SingleOrDefault();
+            CAUTHU CT = qlbddel.CAUTHUs.Where(ct => ct.MaCT == macauthu).SingleOrDefault();
             if (CT != null)
             {
                 qlbddel.CAUTHUs.Remove(CT);
@@ -109,12 +109,12 @@ namespace QuanLyBongDa
         {
             QLGVDBDQGEntities qlbdedit = new QLGVDBDQGEntities();
             string macauthu = tBmaCT.Text;
-            CAUTHU CT = qlbdedit.CAUTHUs.Where(ct => Convert.ToString(ct.MaCT) == macauthu).SingleOrDefault();
+            CAUTHU CT = qlbdedit.CAUTHUs.Where(ct => ct.MaCT == macauthu).SingleOrDefault();
             if (CT != null)
             {
                 CT.MaCT = Convert.ToString(tBmaCT.Text);
                 CT.TenCT = Convert.ToString(tBtenCT.Text);
-                CT.NgaySinh = Convert.ToDateTime(tBngaySinh.Text);
+                CT.NgaySinh = dTPngaySinh.Value.Date;
                 CT.MaLoaiCT = ((LOAICAUTHU)cBloaiCT.SelectedValue).MaLoaiCT;
                 CT.MaDB = ((DOIBONG)cBdoiBong.SelectedValue).MaDB;
                 CT.GhiChu = Convert.ToString(tBghiChu.Text);

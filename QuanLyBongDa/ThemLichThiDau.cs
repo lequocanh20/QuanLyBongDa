@@ -39,6 +39,7 @@ namespace QuanLyBongDa
                 Command.CommandText = "UPDATE LICHTHIDAU SET SanThiDau = (SELECT DISTINCT SanNha FROM DOIBONG D, LICHTHIDAU L WHERE D.MaDB = L.DoiChuNha AND L.DoiChuNha = (SELECT DoiChuNha FROM LICHTHIDAU WHERE MaTD = '" + tBmaTD.Text + "')) WHERE MaTD = '" + tBmaTD.Text + "'";
                 Command.ExecuteNonQuery();
                 MessageBox.Show("Tạo trận đấu thành công","Thông báo");
+                tBmaTD.Text = "";
             }
             catch (Exception)
             {

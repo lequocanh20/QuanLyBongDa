@@ -24,7 +24,6 @@ namespace QuanLyBongDa.DAL
         public string DoiChuNha { get; set; }
         public string DoiKhach { get; set; }
         public Nullable<System.DateTime> NgayThiDau { get; set; }
-        public Nullable<System.TimeSpan> GioThiDau { get; set; }
         public string SanThiDau { get; set; }
         public string MaVD { get; set; }
     

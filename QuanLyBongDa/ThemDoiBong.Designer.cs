@@ -44,7 +44,7 @@
             this.tBsanNha.Margin = new System.Windows.Forms.Padding(2);
             this.tBsanNha.Name = "tBsanNha";
             this.tBsanNha.Size = new System.Drawing.Size(181, 20);
-            this.tBsanNha.TabIndex = 36;
+            this.tBsanNha.TabIndex = 3;
             // 
             // tBtenDB
             // 
@@ -52,7 +52,7 @@
             this.tBtenDB.Margin = new System.Windows.Forms.Padding(2);
             this.tBtenDB.Name = "tBtenDB";
             this.tBtenDB.Size = new System.Drawing.Size(181, 20);
-            this.tBtenDB.TabIndex = 37;
+            this.tBtenDB.TabIndex = 2;
             // 
             // tBmaDB
             // 
@@ -60,7 +60,7 @@
             this.tBmaDB.Margin = new System.Windows.Forms.Padding(2);
             this.tBmaDB.Name = "tBmaDB";
             this.tBmaDB.Size = new System.Drawing.Size(181, 20);
-            this.tBmaDB.TabIndex = 33;
+            this.tBmaDB.TabIndex = 1;
             // 
             // lbSanNha
             // 
@@ -98,7 +98,7 @@
             this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(61, 33);
-            this.btnBack.TabIndex = 70;
+            this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -109,7 +109,7 @@
             this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(61, 33);
-            this.btnXacNhan.TabIndex = 69;
+            this.btnXacNhan.TabIndex = 4;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
@@ -128,7 +128,8 @@
             this.Controls.Add(this.lbTenDB);
             this.Controls.Add(this.lbMaDB);
             this.Name = "ThemDoiBong";
-            this.Text = "ThemDoiBong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Nhập đội bóng";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ThemDoiBong_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

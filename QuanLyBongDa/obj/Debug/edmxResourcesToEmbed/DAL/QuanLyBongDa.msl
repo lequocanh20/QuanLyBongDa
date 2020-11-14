@@ -75,7 +75,6 @@
           <ScalarProperty Name="DoiChuNha" ColumnName="DoiChuNha" />
           <ScalarProperty Name="DoiKhach" ColumnName="DoiKhach" />
           <ScalarProperty Name="NgayThiDau" ColumnName="NgayThiDau" />
-          <ScalarProperty Name="GioThiDau" ColumnName="GioThiDau" />
           <ScalarProperty Name="SanThiDau" ColumnName="SanThiDau" />
           <ScalarProperty Name="MaVD" ColumnName="MaVD" />
         </MappingFragment>

@@ -22,7 +22,7 @@ namespace QuanLyBongDa
         {
             QLGVDBDQGEntities qlbdadd = new QLGVDBDQGEntities();
             string macauthu = "";
-            CAUTHU CT = qlbdadd.CAUTHUs.Where(ct => Convert.ToString(ct.MaCT) == macauthu).SingleOrDefault();
+            CAUTHU CT = qlbdadd.CAUTHUs.Where(ct => ct.MaCT == macauthu).SingleOrDefault();
             if (CT == null)
             {
                 CAUTHU item = new CAUTHU();
@@ -34,6 +34,8 @@ namespace QuanLyBongDa
                 qlbdadd.CAUTHUs.Add(item);
                 qlbdadd.SaveChanges();
                 MessageBox.Show("Đã nhập vào thành công", "Thông báo");
+                tBmaCT.Text = "";
+                tBtenCT.Text = "";
                 ql.xemdulieu();
             }
             else

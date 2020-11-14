@@ -61,8 +61,11 @@ namespace QuanLyBongDa
         }
         private void QLLichThiDau_Load(object sender, EventArgs e)
         {
+            QLGVDBDQGEntities qlbd = new QLGVDBDQGEntities();
             xemdulieu();
             changegridview();
+            cBvongDau.DataSource = qlbd.VONGDAUs.ToList();
+            cBvongDau.DisplayMember = "TenVD";
         }
 
 
@@ -81,12 +84,42 @@ namespace QuanLyBongDa
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
+            QLGVDBDQGEntities qlbddel = new QLGVDBDQGEntities();
+            string matrandau = tBmaTD.Text;
+            LICHTHIDAU LTD = qlbddel.LICHTHIDAUs.Where(ltd => ltd.MaTD == matrandau).SingleOrDefault();
+            if (LTD != null)
+            {
+                qlbddel.LICHTHIDAUs.Remove(LTD);
+                qlbddel.SaveChanges();
+                MessageBox.Show("Đã xóa", "Thông báo");
+                xemdulieu();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi xảy ra...", "Lỗi");
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-
+            QLGVDBDQGEntities qlbdedit = new QLGVDBDQGEntities();
+            string matrandau = tBmaTD.Text;
+            LICHTHIDAU LTD = qlbdedit.LICHTHIDAUs.Where(ltd => ltd.MaTD == matrandau).SingleOrDefault();
+            if (LTD != null)
+            {
+                LTD.DoiChuNha = ((DOIBONG)cBdoi1.SelectedValue).MaDB;
+                LTD.DoiKhach = ((DOIBONG)cBdoi2.SelectedValue).MaDB;
+                LTD.NgayThiDau = Convert.ToDateTime(tBngayGio.Text);
+                LTD.SanThiDau = ((DOIBONG)cBdoi1.SelectedValue).SanNha;
+                LTD.MaVD = ((VONGDAU)cBvongDau.SelectedValue).MaVD;
+                qlbdedit.SaveChanges();
+                MessageBox.Show("Đã sửa", "Thông báo");
+                xemdulieu();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi xảy ra...", "Lỗi");
+            }
         }
 
         private void QLLichThiDau_FormClosing(object sender, FormClosingEventArgs e)

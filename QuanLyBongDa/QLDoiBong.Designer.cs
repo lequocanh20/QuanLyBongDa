@@ -49,6 +49,7 @@
             this.dGVdoiBong.Margin = new System.Windows.Forms.Padding(2);
             this.dGVdoiBong.Name = "dGVdoiBong";
             this.dGVdoiBong.RowTemplate.Height = 28;
+            this.dGVdoiBong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dGVdoiBong.Size = new System.Drawing.Size(478, 226);
             this.dGVdoiBong.TabIndex = 36;
             // 
@@ -58,7 +59,7 @@
             this.btnTim.Margin = new System.Windows.Forms.Padding(2);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(54, 31);
-            this.btnTim.TabIndex = 35;
+            this.btnTim.TabIndex = 7;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
             // 
@@ -68,7 +69,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(54, 31);
-            this.btnSua.TabIndex = 34;
+            this.btnSua.TabIndex = 6;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -79,7 +80,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(54, 31);
-            this.btnXoa.TabIndex = 33;
+            this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -90,7 +91,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(54, 31);
-            this.btnThem.TabIndex = 32;
+            this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -101,7 +102,7 @@
             this.tBsanNha.Margin = new System.Windows.Forms.Padding(2);
             this.tBsanNha.Name = "tBsanNha";
             this.tBsanNha.Size = new System.Drawing.Size(181, 20);
-            this.tBsanNha.TabIndex = 30;
+            this.tBsanNha.TabIndex = 3;
             // 
             // tBtenDB
             // 
@@ -109,7 +110,7 @@
             this.tBtenDB.Margin = new System.Windows.Forms.Padding(2);
             this.tBtenDB.Name = "tBtenDB";
             this.tBtenDB.Size = new System.Drawing.Size(181, 20);
-            this.tBtenDB.TabIndex = 31;
+            this.tBtenDB.TabIndex = 2;
             // 
             // tBmaDB
             // 
@@ -117,7 +118,7 @@
             this.tBmaDB.Margin = new System.Windows.Forms.Padding(2);
             this.tBmaDB.Name = "tBmaDB";
             this.tBmaDB.Size = new System.Drawing.Size(181, 20);
-            this.tBmaDB.TabIndex = 27;
+            this.tBmaDB.TabIndex = 1;
             // 
             // lbSanNha
             // 
@@ -166,7 +167,8 @@
             this.Controls.Add(this.lbTenDB);
             this.Controls.Add(this.lbMaDB);
             this.Name = "QLDoiBong";
-            this.Text = "QLDoiBong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Đội Bóng";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QLDoiBong_FormClosing);
             this.Load += new System.EventHandler(this.QLDoiBong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVdoiBong)).EndInit();

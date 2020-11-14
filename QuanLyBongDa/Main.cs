@@ -37,5 +37,10 @@ namespace QuanLyBongDa
             this.Hide();
             ltd.Show();
         }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
     }
 }
