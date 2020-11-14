@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyBongDa.DAL;
 
 namespace QuanLyBongDa
 {
@@ -19,7 +20,7 @@ namespace QuanLyBongDa
         QLCauThu ql = new QLCauThu();
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            QuanLyBongDaDataContext qlbdadd = new QuanLyBongDaDataContext();
+            QLGVDBDQGEntities qlbdadd = new QLGVDBDQGEntities();
             string macauthu = "";
             CAUTHU CT = qlbdadd.CAUTHUs.Where(ct => Convert.ToString(ct.MaCT) == macauthu).SingleOrDefault();
             if (CT == null)
@@ -30,8 +31,8 @@ namespace QuanLyBongDa
                 item.NgaySinh = dTPngaySinh.Value.Date;
                 item.MaLoaiCT = ((LOAICAUTHU)cBloaiCT.SelectedValue).MaLoaiCT;
                 item.MaDB = ((DOIBONG)cBdoiBong.SelectedValue).MaDB;
-                qlbdadd.CAUTHUs.InsertOnSubmit(item);
-                qlbdadd.SubmitChanges();
+                qlbdadd.CAUTHUs.Add(item);
+                qlbdadd.SaveChanges();
                 MessageBox.Show("Đã nhập vào thành công", "Thông báo");
                 ql.xemdulieu();
             }
@@ -43,7 +44,7 @@ namespace QuanLyBongDa
 
         private void ThemCauThu_Load(object sender, EventArgs e)
         {
-            QuanLyBongDaDataContext qlbdthemcauthu = new QuanLyBongDaDataContext();
+            QLGVDBDQGEntities qlbdthemcauthu = new QLGVDBDQGEntities();
             cBloaiCT.DataSource = qlbdthemcauthu.LOAICAUTHUs.ToList();
             cBloaiCT.DisplayMember = "TenLoaiCT";
             cBdoiBong.DataSource = qlbdthemcauthu.DOIBONGs.ToList();

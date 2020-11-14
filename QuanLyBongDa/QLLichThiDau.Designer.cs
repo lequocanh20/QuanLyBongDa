@@ -44,12 +44,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.MaTD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaDB1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaDB2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayGio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaVD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dGVlichThiDau)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,13 +80,6 @@
             // dGVlichThiDau
             // 
             this.dGVlichThiDau.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVlichThiDau.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaTD,
-            this.MaDB1,
-            this.MaDB2,
-            this.NgayGio,
-            this.MaSan,
-            this.MaVD});
             this.dGVlichThiDau.Location = new System.Drawing.Point(32, 200);
             this.dGVlichThiDau.Name = "dGVlichThiDau";
             this.dGVlichThiDau.Size = new System.Drawing.Size(739, 238);
@@ -194,50 +181,6 @@
             this.textBox3.Size = new System.Drawing.Size(132, 20);
             this.textBox3.TabIndex = 29;
             // 
-            // MaTD
-            // 
-            this.MaTD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MaTD.DataPropertyName = "MaTD";
-            this.MaTD.HeaderText = "Mã thi đấu";
-            this.MaTD.Name = "MaTD";
-            this.MaTD.Width = 83;
-            // 
-            // MaDB1
-            // 
-            this.MaDB1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaDB1.DataPropertyName = "MaDB1";
-            this.MaDB1.HeaderText = "Đội 1";
-            this.MaDB1.Name = "MaDB1";
-            // 
-            // MaDB2
-            // 
-            this.MaDB2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaDB2.DataPropertyName = "MaDB2";
-            this.MaDB2.HeaderText = "Đội 2";
-            this.MaDB2.Name = "MaDB2";
-            // 
-            // NgayGio
-            // 
-            this.NgayGio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.NgayGio.DataPropertyName = "NgayGio";
-            this.NgayGio.HeaderText = "Ngày Giờ";
-            this.NgayGio.Name = "NgayGio";
-            this.NgayGio.Width = 76;
-            // 
-            // MaSan
-            // 
-            this.MaSan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaSan.DataPropertyName = "TenSan";
-            this.MaSan.HeaderText = "Sân thi đấu";
-            this.MaSan.Name = "MaSan";
-            // 
-            // MaVD
-            // 
-            this.MaVD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaVD.DataPropertyName = "TenVD";
-            this.MaVD.HeaderText = "Vòng đấu";
-            this.MaVD.Name = "MaVD";
-            // 
             // QLLichThiDau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,12 +226,6 @@
         private System.Windows.Forms.Label lbMaDoi2;
         private System.Windows.Forms.Label lbMaDoi1;
         private System.Windows.Forms.Label lbMaTD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaTD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDB1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDB2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayGio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaVD;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

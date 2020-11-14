@@ -34,8 +34,8 @@
             this.lbVongDau = new System.Windows.Forms.Label();
             this.lbNgayGio = new System.Windows.Forms.Label();
             this.lbMaTD = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cBvongDau = new System.Windows.Forms.ComboBox();
+            this.dTPlichThiDau = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnBack
@@ -46,6 +46,7 @@
             this.btnBack.TabIndex = 51;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnXacNhan
             // 
@@ -91,30 +92,30 @@
             this.lbMaTD.TabIndex = 43;
             this.lbMaTD.Text = "Mã thi đấu:";
             // 
-            // comboBox1
+            // cBvongDau
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(84, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 21);
-            this.comboBox1.TabIndex = 53;
+            this.cBvongDau.FormattingEnabled = true;
+            this.cBvongDau.Location = new System.Drawing.Point(84, 87);
+            this.cBvongDau.Name = "cBvongDau";
+            this.cBvongDau.Size = new System.Drawing.Size(162, 21);
+            this.cBvongDau.TabIndex = 53;
             // 
-            // dateTimePicker1
+            // dTPlichThiDau
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(84, 45);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 20);
-            this.dateTimePicker1.TabIndex = 54;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 11, 12, 0, 0, 0, 0);
+            this.dTPlichThiDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dTPlichThiDau.Location = new System.Drawing.Point(84, 45);
+            this.dTPlichThiDau.Name = "dTPlichThiDau";
+            this.dTPlichThiDau.Size = new System.Drawing.Size(162, 20);
+            this.dTPlichThiDau.TabIndex = 54;
+            this.dTPlichThiDau.Value = new System.DateTime(2020, 11, 12, 0, 0, 0, 0);
             // 
             // ThemLichThiDau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(265, 160);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dTPlichThiDau);
+            this.Controls.Add(this.cBvongDau);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.tBmaTD);
@@ -123,6 +124,7 @@
             this.Controls.Add(this.lbMaTD);
             this.Name = "ThemLichThiDau";
             this.Text = "ThemLichThiDau";
+            this.Load += new System.EventHandler(this.ThemLichThiDau_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,7 +137,7 @@
         private System.Windows.Forms.Label lbVongDau;
         private System.Windows.Forms.Label lbNgayGio;
         private System.Windows.Forms.Label lbMaTD;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cBvongDau;
+        private System.Windows.Forms.DateTimePicker dTPlichThiDau;
     }
 }

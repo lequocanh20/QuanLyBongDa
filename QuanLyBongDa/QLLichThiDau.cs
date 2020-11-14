@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyBongDa.DAL;
 
 namespace QuanLyBongDa
 {
@@ -18,9 +19,9 @@ namespace QuanLyBongDa
         }
         public void xemdulieu()
         {
-            QuanLyBongDaDataContext qlbd = new QuanLyBongDaDataContext();
-            dGVlichThiDau.DataSource = from u in qlbd.LICHTHIDAUs select new { MaTD = u.MaTD, MaDB1 = u.DOIBONG1.TenDB, MaDB2 = u.DOIBONG.TenDB, NgayGio = u.NgayThiDau, TenSan = u.DOIBONG.SanNha, TenVD = u.VONGDAU.TenVD };
-
+            QLGVDBDQGEntities qlbd = new QLGVDBDQGEntities();
+            var dslichthidau = from u in qlbd.LICHTHIDAUs select new { MaTD = u.MaTD, DoiChuNha = u.DOIBONG1.TenDB, DoiKhach = u.DOIBONG.TenDB, NgayThiDau = u.NgayThiDau, SanThiDau = u.SanThiDau, VongDau = u.VONGDAU.TenVD };
+            dGVlichThiDau.DataSource = dslichthidau.ToList();
         }
 
         private void QLLichThiDau_Load(object sender, EventArgs e)

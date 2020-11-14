@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyBongDa.DAL;
 
 namespace QuanLyBongDa
 {
@@ -19,7 +20,7 @@ namespace QuanLyBongDa
         QLDoiBong ql = new QLDoiBong();
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            QuanLyBongDaDataContext qlbdadd = new QuanLyBongDaDataContext();
+            QLGVDBDQGEntities qlbdadd = new QLGVDBDQGEntities();
             string madoibong = "";
             DOIBONG DB = qlbdadd.DOIBONGs.Where(db => Convert.ToString(db.MaDB) == madoibong).SingleOrDefault();
             if (DB == null)
@@ -28,8 +29,8 @@ namespace QuanLyBongDa
                 item.MaDB = Convert.ToString(tBmaDB.Text);
                 item.TenDB = Convert.ToString(tBtenDB.Text);
                 item.SanNha = Convert.ToString(tBsanNha.Text);
-                qlbdadd.DOIBONGs.InsertOnSubmit(item);
-                qlbdadd.SubmitChanges();
+                qlbdadd.DOIBONGs.Add(item);
+                qlbdadd.SaveChanges();
                 MessageBox.Show("Đã nhập vào thành công", "Thông báo");
                 ql.xemdulieu();
             }

@@ -33,9 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +56,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\BANGXEPHANG.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CAUTHU.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CHITIETKETQUA.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DANHSACHCAUTHUGHIBAN.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DOIBONG.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\KETQUATHIDAU.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LICHTHIDAU.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LOAICAUTHU.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\QuanLyBongDa.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBongDa.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\QuanLyBongDa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\QuanLyBongDa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBongDa.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\VONGDAU.cs">
+      <DependentUpon>QuanLyBongDa.tt</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +172,14 @@
     <EmbeddedResource Include="ThemLichThiDau.resx">
       <DependentUpon>ThemLichThiDau.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="DAL\QuanLyBongDa.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLyBongDa.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAL\QuanLyBongDa.edmx.diagram">
+      <DependentUpon>QuanLyBongDa.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,9 +195,20 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DAL\" />
+    <Content Include="DAL\QuanLyBongDa.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QuanLyBongDa.Context.cs</LastGenOutput>
+      <DependentUpon>QuanLyBongDa.edmx</DependentUpon>
+    </Content>
+    <Content Include="DAL\QuanLyBongDa.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyBongDa.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBongDa.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

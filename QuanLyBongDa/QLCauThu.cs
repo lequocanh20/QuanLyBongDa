@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyBongDa.DAL;
 
 namespace QuanLyBongDa
 {
@@ -26,8 +27,9 @@ namespace QuanLyBongDa
         
         public void xemdulieu()
         {
-            QuanLyBongDaDataContext qlbd = new QuanLyBongDaDataContext();
-            dGVcauThu.DataSource = from u in qlbd.CAUTHUs select new { MaCT = u.MaCT, TenCT = u.TenCT, NgaySinh = u.NgaySinh, TenLoaiCT = u.LOAICAUTHU.TenLoaiCT, TenDB = u.DOIBONG.TenDB, GhiChu = u.GhiChu};
+            QLGVDBDQGEntities qlbd = new QLGVDBDQGEntities();
+            var dscauthu = from u in qlbd.CAUTHUs select new { MaCT = u.MaCT, TenCT = u.TenCT, NgaySinh = u.NgaySinh, TenLoaiCT = u.LOAICAUTHU.TenLoaiCT, TenDB = u.DOIBONG.TenDB, GhiChu = u.GhiChu};
+            dGVcauThu.DataSource = dscauthu.ToList();
             tBmaCT.DataBindings.Clear();
             tBmaCT.DataBindings.Add(new Binding("Text", dGVcauThu.DataSource, "MaCT"));
             tBtenCT.DataBindings.Clear();
@@ -58,13 +60,13 @@ namespace QuanLyBongDa
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            QuanLyBongDaDataContext qlbddel = new QuanLyBongDaDataContext();
+            QLGVDBDQGEntities qlbddel = new QLGVDBDQGEntities();
             string macauthu = tBmaCT.Text;
             CAUTHU CT = qlbddel.CAUTHUs.Where(ct => Convert.ToString(ct.MaCT) == macauthu).SingleOrDefault();
             if (CT != null)
             {
-                qlbddel.CAUTHUs.DeleteOnSubmit(CT);
-                qlbddel.SubmitChanges();
+                qlbddel.CAUTHUs.Remove(CT);
+                qlbddel.SaveChanges();
                 MessageBox.Show("Đã xóa", "Thông báo");
                 xemdulieu();
             }
@@ -76,7 +78,7 @@ namespace QuanLyBongDa
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            QuanLyBongDaDataContext qlbdedit = new QuanLyBongDaDataContext();
+            QLGVDBDQGEntities qlbdedit = new QLGVDBDQGEntities();
             string macauthu = tBmaCT.Text;
             CAUTHU CT = qlbdedit.CAUTHUs.Where(ct => Convert.ToString(ct.MaCT) == macauthu).SingleOrDefault();
             if (CT != null)
@@ -87,7 +89,7 @@ namespace QuanLyBongDa
                 CT.MaLoaiCT = ((LOAICAUTHU)cBloaiCT.SelectedValue).MaLoaiCT;
                 CT.MaDB = ((DOIBONG)cBdoiBong.SelectedValue).MaDB;
                 CT.GhiChu = Convert.ToString(tBghiChu.Text);
-                qlbdedit.SubmitChanges();
+                qlbdedit.SaveChanges();
                 MessageBox.Show("Đã sửa", "Thông báo");
                 xemdulieu();
             }

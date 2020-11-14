@@ -14,3 +14,24 @@ E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemCauThu.resources
 E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemDoiBong.resources
 E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.QLLichThiDau.resources
 E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemLichThiDau.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.csprojAssemblyReference.cache
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.Main.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.Properties.Resources.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.QLCauThu.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.QLDoiBong.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.QLLichThiDau.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemCauThu.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemDoiBong.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemLichThiDau.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.csproj.GenerateResource.cache
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.csproj.CoreCompileInputs.cache
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.exe
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.pdb
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\QuanLyBongDa.exe.config
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\QuanLyBongDa.exe
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\QuanLyBongDa.pdb
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramework.dll
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramework.xml
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.csproj.CopyComplete
