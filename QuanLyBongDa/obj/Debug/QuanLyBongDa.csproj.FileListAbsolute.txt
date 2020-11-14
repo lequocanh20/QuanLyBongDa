@@ -1,0 +1,16 @@
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.csprojAssemblyReference.cache
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.Main.resources
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.Properties.Resources.resources
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.QLDoiBong.resources
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.csproj.GenerateResource.cache
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.csproj.CoreCompileInputs.cache
+E:\Do An\OOP\QuanLyBongDa\bin\Debug\QuanLyBongDa.exe.config
+E:\Do An\OOP\QuanLyBongDa\bin\Debug\QuanLyBongDa.exe
+E:\Do An\OOP\QuanLyBongDa\bin\Debug\QuanLyBongDa.pdb
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.exe
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.pdb
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.QLCauThu.resources
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemCauThu.resources
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemDoiBong.resources
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.QLLichThiDau.resources
+E:\Do An\OOP\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemLichThiDau.resources
