@@ -17,14 +17,28 @@ namespace QuanLyBongDa
         {
             InitializeComponent();
         }
-    
+
+
+        //                              load dữ liệu, thiết kế cột, binding 
+
+
         private void QLDoiBong_FormClosing(object sender, FormClosingEventArgs e)
         {
             Main main = new Main();
             this.Hide();
             main.Show();
         }
-        
+
+        public void changegridview()
+        {
+            dGVdoiBong.Columns[0].HeaderText = "Mã đội bóng";
+            dGVdoiBong.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dGVdoiBong.Columns[1].HeaderText = "Tên đội bóng";
+            dGVdoiBong.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dGVdoiBong.Columns[2].HeaderText = "Sân nhà";
+            dGVdoiBong.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        }
+
         public void xemdulieu()
         {
             QLGVDBDQGEntities qlbd = new QLGVDBDQGEntities();
@@ -41,7 +55,15 @@ namespace QuanLyBongDa
         private void QLDoiBong_Load(object sender, EventArgs e)
         {
             xemdulieu();
+            changegridview();
         }
+
+        //                                          end
+
+
+
+        //                                  thiết lập chức năng thêm, xóa, sửa
+
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -87,5 +109,7 @@ namespace QuanLyBongDa
                 MessageBox.Show("Có lỗi xảy ra...", "Lỗi");
             }
         }
+
+        //                                          end
     }
 }

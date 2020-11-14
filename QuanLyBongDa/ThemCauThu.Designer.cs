@@ -56,6 +56,7 @@
             // 
             // cBdoiBong
             // 
+            this.cBdoiBong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBdoiBong.FormattingEnabled = true;
             this.cBdoiBong.Items.AddRange(new object[] {
             "Trong nước ",
@@ -68,6 +69,7 @@
             // 
             // cBloaiCT
             // 
+            this.cBloaiCT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBloaiCT.FormattingEnabled = true;
             this.cBloaiCT.Items.AddRange(new object[] {
             "Trong nước ",

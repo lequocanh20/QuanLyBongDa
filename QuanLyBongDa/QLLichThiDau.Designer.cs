@@ -32,8 +32,6 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dGVlichThiDau = new System.Windows.Forms.DataGridView();
-            this.tBdoi2 = new System.Windows.Forms.TextBox();
-            this.tBdoi1 = new System.Windows.Forms.TextBox();
             this.tBmaTD = new System.Windows.Forms.TextBox();
             this.lbVongDau = new System.Windows.Forms.Label();
             this.lbSan = new System.Windows.Forms.Label();
@@ -41,9 +39,11 @@
             this.lbMaDoi2 = new System.Windows.Forms.Label();
             this.lbMaDoi1 = new System.Windows.Forms.Label();
             this.lbMaTD = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tBsanThiDau = new System.Windows.Forms.TextBox();
+            this.tBngayGio = new System.Windows.Forms.TextBox();
+            this.cBvongDau = new System.Windows.Forms.ComboBox();
+            this.cBdoi1 = new System.Windows.Forms.ComboBox();
+            this.cBdoi2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGVlichThiDau)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,22 +85,9 @@
             this.dGVlichThiDau.Size = new System.Drawing.Size(739, 238);
             this.dGVlichThiDau.TabIndex = 34;
             // 
-            // tBdoi2
-            // 
-            this.tBdoi2.Location = new System.Drawing.Point(555, 46);
-            this.tBdoi2.Name = "tBdoi2";
-            this.tBdoi2.Size = new System.Drawing.Size(216, 20);
-            this.tBdoi2.TabIndex = 28;
-            // 
-            // tBdoi1
-            // 
-            this.tBdoi1.Location = new System.Drawing.Point(98, 46);
-            this.tBdoi1.Name = "tBdoi1";
-            this.tBdoi1.Size = new System.Drawing.Size(216, 20);
-            this.tBdoi1.TabIndex = 29;
-            // 
             // tBmaTD
             // 
+            this.tBmaTD.Enabled = false;
             this.tBmaTD.Location = new System.Drawing.Point(348, 12);
             this.tBmaTD.Name = "tBmaTD";
             this.tBmaTD.Size = new System.Drawing.Size(162, 20);
@@ -160,41 +147,62 @@
             this.lbMaTD.TabIndex = 27;
             this.lbMaTD.Text = "Mã thi đấu:";
             // 
-            // textBox1
+            // tBsanThiDau
             // 
-            this.textBox1.Location = new System.Drawing.Point(555, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 20);
-            this.textBox1.TabIndex = 28;
+            this.tBsanThiDau.Enabled = false;
+            this.tBsanThiDau.Location = new System.Drawing.Point(555, 93);
+            this.tBsanThiDau.Name = "tBsanThiDau";
+            this.tBsanThiDau.Size = new System.Drawing.Size(216, 20);
+            this.tBsanThiDau.TabIndex = 28;
             // 
-            // textBox2
+            // tBngayGio
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 20);
-            this.textBox2.TabIndex = 29;
+            this.tBngayGio.Location = new System.Drawing.Point(98, 90);
+            this.tBngayGio.Name = "tBngayGio";
+            this.tBngayGio.Size = new System.Drawing.Size(132, 20);
+            this.tBngayGio.TabIndex = 29;
             // 
-            // textBox3
+            // cBvongDau
             // 
-            this.textBox3.Location = new System.Drawing.Point(98, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 20);
-            this.textBox3.TabIndex = 29;
+            this.cBvongDau.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBvongDau.FormattingEnabled = true;
+            this.cBvongDau.Location = new System.Drawing.Point(98, 135);
+            this.cBvongDau.Name = "cBvongDau";
+            this.cBvongDau.Size = new System.Drawing.Size(132, 21);
+            this.cBvongDau.TabIndex = 38;
+            // 
+            // cBdoi1
+            // 
+            this.cBdoi1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBdoi1.FormattingEnabled = true;
+            this.cBdoi1.Location = new System.Drawing.Point(98, 45);
+            this.cBdoi1.Name = "cBdoi1";
+            this.cBdoi1.Size = new System.Drawing.Size(219, 21);
+            this.cBdoi1.TabIndex = 38;
+            // 
+            // cBdoi2
+            // 
+            this.cBdoi2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBdoi2.FormattingEnabled = true;
+            this.cBdoi2.Location = new System.Drawing.Point(555, 45);
+            this.cBdoi2.Name = "cBdoi2";
+            this.cBdoi2.Size = new System.Drawing.Size(216, 21);
+            this.cBdoi2.TabIndex = 38;
             // 
             // QLLichThiDau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cBdoi2);
+            this.Controls.Add(this.cBdoi1);
+            this.Controls.Add(this.cBvongDau);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dGVlichThiDau);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.tBdoi2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.tBdoi1);
+            this.Controls.Add(this.tBsanThiDau);
+            this.Controls.Add(this.tBngayGio);
             this.Controls.Add(this.tBmaTD);
             this.Controls.Add(this.lbVongDau);
             this.Controls.Add(this.lbSan);
@@ -204,6 +212,7 @@
             this.Controls.Add(this.lbMaTD);
             this.Name = "QLLichThiDau";
             this.Text = "QLLichThiDau";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QLLichThiDau_FormClosing);
             this.Load += new System.EventHandler(this.QLLichThiDau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGVlichThiDau)).EndInit();
             this.ResumeLayout(false);
@@ -217,8 +226,6 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dGVlichThiDau;
-        private System.Windows.Forms.TextBox tBdoi2;
-        private System.Windows.Forms.TextBox tBdoi1;
         private System.Windows.Forms.TextBox tBmaTD;
         private System.Windows.Forms.Label lbVongDau;
         private System.Windows.Forms.Label lbSan;
@@ -226,8 +233,10 @@
         private System.Windows.Forms.Label lbMaDoi2;
         private System.Windows.Forms.Label lbMaDoi1;
         private System.Windows.Forms.Label lbMaTD;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tBsanThiDau;
+        private System.Windows.Forms.TextBox tBngayGio;
+        private System.Windows.Forms.ComboBox cBvongDau;
+        private System.Windows.Forms.ComboBox cBdoi1;
+        private System.Windows.Forms.ComboBox cBdoi2;
     }
 }

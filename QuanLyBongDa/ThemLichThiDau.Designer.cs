@@ -94,6 +94,7 @@
             // 
             // cBvongDau
             // 
+            this.cBvongDau.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBvongDau.FormattingEnabled = true;
             this.cBvongDau.Location = new System.Drawing.Point(84, 87);
             this.cBvongDau.Name = "cBvongDau";
@@ -102,7 +103,8 @@
             // 
             // dTPlichThiDau
             // 
-            this.dTPlichThiDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dTPlichThiDau.CustomFormat = "dd/MM/yyyy hh:mm";
+            this.dTPlichThiDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dTPlichThiDau.Location = new System.Drawing.Point(84, 45);
             this.dTPlichThiDau.Name = "dTPlichThiDau";
             this.dTPlichThiDau.Size = new System.Drawing.Size(162, 20);

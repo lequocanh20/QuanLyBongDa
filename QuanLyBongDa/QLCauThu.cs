@@ -18,6 +18,9 @@ namespace QuanLyBongDa
             InitializeComponent();
         }
 
+
+        //                              load dữ liệu, thiết kế cột, binding 
+
         private void QLCauThu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Main main = new Main();
@@ -46,9 +49,35 @@ namespace QuanLyBongDa
             cBdoiBong.DataBindings.Add(new Binding("Text", dGVcauThu.DataSource, "TenDB"));
         }
 
+        public void changegridview()
+        {
+            dGVcauThu.Columns[0].HeaderText = "Mã cầu thủ";
+            dGVcauThu.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dGVcauThu.Columns[1].HeaderText = "Tên";
+            dGVcauThu.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dGVcauThu.Columns[2].HeaderText = "Ngày sinh";
+            dGVcauThu.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dGVcauThu.Columns[3].HeaderText = "Loại cầu thủ";
+            dGVcauThu.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dGVcauThu.Columns[4].HeaderText = "Đội bóng";
+            dGVcauThu.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dGVcauThu.Columns[5].HeaderText = "Ghi chú";
+            dGVcauThu.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        }
+
+
+        //                                          end
+
+
+
+        //                                  thiết lập chức năng thêm, xóa, sửa
+
+
+
         private void QLCauThu_Load(object sender, EventArgs e)
         {
             xemdulieu();
+            changegridview();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -98,5 +127,7 @@ namespace QuanLyBongDa
                 MessageBox.Show("Có lỗi xảy ra...", "Lỗi");
             }
         }
+
+        //                                          end
     }
 }

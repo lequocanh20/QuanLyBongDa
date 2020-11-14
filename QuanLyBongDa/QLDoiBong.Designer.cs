@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dGVdoiBong = new System.Windows.Forms.DataGridView();
-            this.MaDB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SanNha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTim = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -48,38 +45,12 @@
             // dGVdoiBong
             // 
             this.dGVdoiBong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVdoiBong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaDB,
-            this.TenDB,
-            this.SanNha});
             this.dGVdoiBong.Location = new System.Drawing.Point(14, 140);
             this.dGVdoiBong.Margin = new System.Windows.Forms.Padding(2);
             this.dGVdoiBong.Name = "dGVdoiBong";
             this.dGVdoiBong.RowTemplate.Height = 28;
             this.dGVdoiBong.Size = new System.Drawing.Size(478, 226);
             this.dGVdoiBong.TabIndex = 36;
-            // 
-            // MaDB
-            // 
-            this.MaDB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MaDB.DataPropertyName = "MaDB";
-            this.MaDB.HeaderText = "Mã đội bóng";
-            this.MaDB.Name = "MaDB";
-            this.MaDB.Width = 92;
-            // 
-            // TenDB
-            // 
-            this.TenDB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenDB.DataPropertyName = "TenDB";
-            this.TenDB.HeaderText = "Tên đội bóng";
-            this.TenDB.Name = "TenDB";
-            // 
-            // SanNha
-            // 
-            this.SanNha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SanNha.DataPropertyName = "SanNha";
-            this.SanNha.HeaderText = "Sân Nhà";
-            this.SanNha.Name = "SanNha";
             // 
             // btnTim
             // 
@@ -182,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 383);
+            this.ClientSize = new System.Drawing.Size(504, 383);
             this.Controls.Add(this.dGVdoiBong);
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.btnSua);
@@ -207,9 +178,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dGVdoiBong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenDB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SanNha;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;

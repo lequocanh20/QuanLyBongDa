@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.dGVcauThu = new System.Windows.Forms.DataGridView();
-            this.MaCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaLoaiCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaDB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tBmaCT = new System.Windows.Forms.TextBox();
             this.lbMaCauThu = new System.Windows.Forms.Label();
             this.btnSua = new System.Windows.Forms.Button();
@@ -57,61 +51,12 @@
             // 
             this.dGVcauThu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dGVcauThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVcauThu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaCT,
-            this.TenCT,
-            this.NgaySinh,
-            this.MaLoaiCT,
-            this.MaDB,
-            this.GhiChu});
             this.dGVcauThu.Location = new System.Drawing.Point(86, 169);
             this.dGVcauThu.Margin = new System.Windows.Forms.Padding(2);
             this.dGVcauThu.Name = "dGVcauThu";
             this.dGVcauThu.RowTemplate.Height = 28;
             this.dGVcauThu.Size = new System.Drawing.Size(629, 272);
             this.dGVcauThu.TabIndex = 56;
-            // 
-            // MaCT
-            // 
-            this.MaCT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaCT.DataPropertyName = "MaCT";
-            this.MaCT.HeaderText = "Mã cầu thủ";
-            this.MaCT.Name = "MaCT";
-            // 
-            // TenCT
-            // 
-            this.TenCT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenCT.DataPropertyName = "TenCT";
-            this.TenCT.HeaderText = "Tên";
-            this.TenCT.Name = "TenCT";
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày sinh";
-            this.NgaySinh.Name = "NgaySinh";
-            // 
-            // MaLoaiCT
-            // 
-            this.MaLoaiCT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaLoaiCT.DataPropertyName = "TenLoaiCT";
-            this.MaLoaiCT.HeaderText = "Loại cầu thủ";
-            this.MaLoaiCT.Name = "MaLoaiCT";
-            // 
-            // MaDB
-            // 
-            this.MaDB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaDB.DataPropertyName = "TenDB";
-            this.MaDB.HeaderText = "Đội bóng";
-            this.MaDB.Name = "MaDB";
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.Name = "GhiChu";
             // 
             // tBmaCT
             // 
@@ -240,6 +185,7 @@
             // 
             // cBdoiBong
             // 
+            this.cBdoiBong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBdoiBong.FormattingEnabled = true;
             this.cBdoiBong.Items.AddRange(new object[] {
             "Trong nước ",
@@ -252,6 +198,7 @@
             // 
             // cBloaiCT
             // 
+            this.cBloaiCT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBloaiCT.FormattingEnabled = true;
             this.cBloaiCT.Items.AddRange(new object[] {
             "Trong nước ",
@@ -310,11 +257,5 @@
         private System.Windows.Forms.TextBox tBngaySinh;
         private System.Windows.Forms.ComboBox cBdoiBong;
         private System.Windows.Forms.ComboBox cBloaiCT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaCT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenCT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiCT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
     }
 }
