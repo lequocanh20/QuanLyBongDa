@@ -42,5 +42,12 @@ namespace QuanLyBongDa
         {
             Application.ExitThread();
         }
+
+        private void btnKetQua_Click(object sender, EventArgs e)
+        {
+            KetQuaThiDau kq = new KetQuaThiDau();
+            this.Hide();
+            kq.Show();
+        }
     }
 }

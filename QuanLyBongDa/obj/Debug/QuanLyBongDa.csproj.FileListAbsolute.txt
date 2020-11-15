@@ -35,3 +35,5 @@ C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramew
 C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramework.xml
 C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.csproj.CopyComplete
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.KetQuaThiDau.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemKetQua.resources

@@ -98,6 +98,12 @@
     <Compile Include="DAL\VONGDAU.cs">
       <DependentUpon>QuanLyBongDa.tt</DependentUpon>
     </Compile>
+    <Compile Include="KetQuaThiDau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KetQuaThiDau.Designer.cs">
+      <DependentUpon>KetQuaThiDau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,12 +142,21 @@
     <Compile Include="ThemDoiBong.Designer.cs">
       <DependentUpon>ThemDoiBong.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKetQua.Designer.cs">
+      <DependentUpon>ThemKetQua.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemLichThiDau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThemLichThiDau.Designer.cs">
       <DependentUpon>ThemLichThiDau.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="KetQuaThiDau.resx">
+      <DependentUpon>KetQuaThiDau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemDoiBong.resx">
       <DependentUpon>ThemDoiBong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKetQua.resx">
+      <DependentUpon>ThemKetQua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemLichThiDau.resx">
       <DependentUpon>ThemLichThiDau.cs</DependentUpon>

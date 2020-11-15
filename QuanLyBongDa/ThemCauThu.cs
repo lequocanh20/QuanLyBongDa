@@ -40,7 +40,7 @@ namespace QuanLyBongDa
             }
             else
             {
-                MessageBox.Show("Vui lòng kiểm tra lại số hóa đơn", "Lỗi");
+                MessageBox.Show("Vui lòng kiểm tra lại...", "Lỗi");
             }
         }
 

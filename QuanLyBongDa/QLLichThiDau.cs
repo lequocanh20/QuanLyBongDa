@@ -110,7 +110,7 @@ namespace QuanLyBongDa
                 LTD.DoiChuNha = ((DOIBONG)cBdoi1.SelectedValue).MaDB;
                 LTD.DoiKhach = ((DOIBONG)cBdoi2.SelectedValue).MaDB;
                 LTD.NgayThiDau = Convert.ToDateTime(tBngayGio.Text);
-                LTD.SanThiDau = ((DOIBONG)cBdoi1.SelectedValue).SanNha;
+                LTD.SanThiDau = Convert.ToString(tBsanThiDau.Text);
                 LTD.MaVD = ((VONGDAU)cBvongDau.SelectedValue).MaVD;
                 qlbdedit.SaveChanges();
                 MessageBox.Show("Đã sửa", "Thông báo");
@@ -128,6 +128,19 @@ namespace QuanLyBongDa
             this.Hide();
             main.Show();
         }
+
+        private void cBdoi1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            QLGVDBDQGEntities qlbd = new QLGVDBDQGEntities();
+            foreach(var item in qlbd.DOIBONGs)
+            {
+                if(((DOIBONG)cBdoi1.SelectedValue).MaDB == item.MaDB)
+                {
+                    tBsanThiDau.Text = item.SanNha;
+                }    
+            }    
+        }
+
 
         //                                          end
     }

@@ -62,6 +62,7 @@
             this.btnKetQua.TabIndex = 4;
             this.btnKetQua.Text = "Kết Quả Thi Đấu";
             this.btnKetQua.UseVisualStyleBackColor = true;
+            this.btnKetQua.Click += new System.EventHandler(this.btnKetQua_Click);
             // 
             // btnLichThiDau
             // 

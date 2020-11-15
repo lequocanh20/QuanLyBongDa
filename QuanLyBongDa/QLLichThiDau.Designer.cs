@@ -180,6 +180,7 @@
             this.cBdoi1.Name = "cBdoi1";
             this.cBdoi1.Size = new System.Drawing.Size(219, 21);
             this.cBdoi1.TabIndex = 2;
+            this.cBdoi1.SelectedValueChanged += new System.EventHandler(this.cBdoi1_SelectedValueChanged);
             // 
             // cBdoi2
             // 
