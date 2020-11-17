@@ -30,9 +30,9 @@
         </EntityType>
         <EntityType Name="CHITIETKETQUA">
           <Key>
-            <PropertyRef Name="MaCTKQ" />
+            <PropertyRef Name="STT" />
           </Key>
-          <Property Name="MaCTKQ" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MaCT" Type="varchar" MaxLength="10" />
           <Property Name="MaDB" Type="varchar" MaxLength="10" />
           <Property Name="LoaiBT" Type="varchar" MaxLength="1" />
@@ -74,7 +74,6 @@
           <Property Name="DoiChuNha" Type="varchar" MaxLength="10" />
           <Property Name="DoiKhach" Type="varchar" MaxLength="10" />
           <Property Name="NgayThiDau" Type="smalldatetime" />
-          <Property Name="GioThiDau" Type="time" Precision="7" />
           <Property Name="SanThiDau" Type="nvarchar" MaxLength="50" />
           <Property Name="MaVD" Type="varchar" MaxLength="10" />
         </EntityType>
@@ -346,9 +345,9 @@
         </EntityType>
         <EntityType Name="CHITIETKETQUA">
           <Key>
-            <PropertyRef Name="MaCTKQ" />
+            <PropertyRef Name="STT" />
           </Key>
-          <Property Name="MaCTKQ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="MaCT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="MaDB" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="LoaiBT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
@@ -681,7 +680,7 @@
           <EntitySetMapping Name="CHITIETKETQUAs">
             <EntityTypeMapping TypeName="QLGVDBDQGModel.CHITIETKETQUA">
               <MappingFragment StoreEntitySet="CHITIETKETQUA">
-                <ScalarProperty Name="MaCTKQ" ColumnName="MaCTKQ" />
+                <ScalarProperty Name="STT" ColumnName="STT" />
                 <ScalarProperty Name="MaCT" ColumnName="MaCT" />
                 <ScalarProperty Name="MaDB" ColumnName="MaDB" />
                 <ScalarProperty Name="LoaiBT" ColumnName="LoaiBT" />

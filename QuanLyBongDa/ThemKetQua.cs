@@ -71,5 +71,11 @@ namespace QuanLyBongDa
                 }
             }
         }
+
+        private void ThemKetQua_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            kqtd.Show();
+        }
     }
 }

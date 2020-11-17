@@ -4,16 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="72c3739b295c48638d3d62a3f0dce743" Name="Diagram1">
-        <EntityTypeShape EntityType="QLGVDBDQGModel.BANGXEPHANG" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLGVDBDQGModel.CAUTHU" Width="1.5" PointX="6" PointY="6.625" IsExpanded="true" />
+      <Diagram DiagramId="9a6f3c64bc2e43ae9498e594ee45697f" Name="Diagram1">
+        <EntityTypeShape EntityType="QLGVDBDQGModel.BANGXEPHANG" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGVDBDQGModel.CAUTHU" Width="1.5" PointX="6" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QLGVDBDQGModel.CHITIETKETQUA" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLGVDBDQGModel.DANHSACHCAUTHUGHIBAN" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLGVDBDQGModel.DOIBONG" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLGVDBDQGModel.KETQUATHIDAU" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGVDBDQGModel.DANHSACHCAUTHUGHIBAN" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGVDBDQGModel.DOIBONG" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGVDBDQGModel.KETQUATHIDAU" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
         <EntityTypeShape EntityType="QLGVDBDQGModel.LICHTHIDAU" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLGVDBDQGModel.LOAICAUTHU" Width="1.5" PointX="3.75" PointY="10.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLGVDBDQGModel.VONGDAU" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGVDBDQGModel.LOAICAUTHU" Width="1.5" PointX="3.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGVDBDQGModel.VONGDAU" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
         <AssociationConnector Association="QLGVDBDQGModel.FK__BANGXEPHAN__Hang__3A81B327" ManuallyRouted="false" />
         <AssociationConnector Association="QLGVDBDQGModel.FK__CAUTHU__MaDB__286302EC" ManuallyRouted="false" />
         <AssociationConnector Association="QLGVDBDQGModel.FK__CAUTHU__MaDB__29572725" ManuallyRouted="false" />

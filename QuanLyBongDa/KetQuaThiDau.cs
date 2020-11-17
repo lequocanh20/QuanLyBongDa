@@ -111,5 +111,12 @@ namespace QuanLyBongDa
             this.Hide();
             main.Show();
         }
+
+        private void dGVketQua_DoubleClick(object sender, EventArgs e)
+        {
+            ChiTietKetQua ctkq = new ChiTietKetQua();
+            this.Hide();
+            ctkq.Show();
+        }
     }
 }

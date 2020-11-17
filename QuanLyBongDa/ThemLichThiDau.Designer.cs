@@ -127,6 +127,7 @@
             this.Name = "ThemLichThiDau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tạo Lịch Thi Đấu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ThemLichThiDau_FormClosing);
             this.Load += new System.EventHandler(this.ThemLichThiDau_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

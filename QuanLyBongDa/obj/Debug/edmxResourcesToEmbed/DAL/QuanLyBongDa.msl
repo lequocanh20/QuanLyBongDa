@@ -29,7 +29,7 @@
     <EntitySetMapping Name="CHITIETKETQUAs">
       <EntityTypeMapping TypeName="QLGVDBDQGModel.CHITIETKETQUA">
         <MappingFragment StoreEntitySet="CHITIETKETQUA">
-          <ScalarProperty Name="MaCTKQ" ColumnName="MaCTKQ" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
           <ScalarProperty Name="MaCT" ColumnName="MaCT" />
           <ScalarProperty Name="MaDB" ColumnName="MaDB" />
           <ScalarProperty Name="LoaiBT" ColumnName="LoaiBT" />

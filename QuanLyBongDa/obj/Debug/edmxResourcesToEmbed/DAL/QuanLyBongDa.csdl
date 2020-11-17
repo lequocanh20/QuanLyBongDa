@@ -30,9 +30,9 @@
   </EntityType>
   <EntityType Name="CHITIETKETQUA">
     <Key>
-      <PropertyRef Name="MaCTKQ" />
+      <PropertyRef Name="STT" />
     </Key>
-    <Property Name="MaCTKQ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="MaCT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="MaDB" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="LoaiBT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />

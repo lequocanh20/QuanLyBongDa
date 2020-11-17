@@ -208,6 +208,7 @@
             this.Name = "ThemCauThu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập cầu thủ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ThemCauThu_FormClosing);
             this.Load += new System.EventHandler(this.ThemCauThu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

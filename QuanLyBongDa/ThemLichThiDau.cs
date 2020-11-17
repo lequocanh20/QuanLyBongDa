@@ -62,5 +62,11 @@ namespace QuanLyBongDa
             cBvongDau.DataSource = qlbd.VONGDAUs.ToList();
             cBvongDau.DisplayMember = "TenVD";
         }
+
+        private void ThemLichThiDau_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            ql.Show();
+        }
     }
 }

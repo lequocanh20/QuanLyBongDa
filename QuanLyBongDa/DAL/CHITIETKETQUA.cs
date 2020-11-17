@@ -14,7 +14,7 @@ namespace QuanLyBongDa.DAL
     
     public partial class CHITIETKETQUA
     {
-        public string MaCTKQ { get; set; }
+        public int STT { get; set; }
         public string MaCT { get; set; }
         public string MaDB { get; set; }
         public string LoaiBT { get; set; }

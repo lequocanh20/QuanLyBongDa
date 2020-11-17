@@ -58,5 +58,11 @@ namespace QuanLyBongDa
             this.Hide();
             ql.Show();
         }
+
+        private void ThemCauThu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            ql.Show();
+        }
     }
 }

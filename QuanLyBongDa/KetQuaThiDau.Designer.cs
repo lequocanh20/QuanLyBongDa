@@ -99,6 +99,7 @@ namespace QuanLyBongDa
             this.dGVketQua.Name = "dGVketQua";
             this.dGVketQua.Size = new System.Drawing.Size(788, 221);
             this.dGVketQua.TabIndex = 33;
+            this.dGVketQua.DoubleClick += new System.EventHandler(this.dGVketQua_DoubleClick);
             // 
             // btnSua
             // 

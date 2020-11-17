@@ -37,3 +37,5 @@ C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\bin\Debug\EntityFramew
 C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.csproj.CopyComplete
 C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.KetQuaThiDau.resources
 C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemKetQua.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.ChiTietKetQua.resources
+C:\Users\lequo\Documents\GitHub\QuanLyBongDa\QuanLyBongDa\obj\Debug\QuanLyBongDa.ThemChiTietKetQua.resources

@@ -25,9 +25,9 @@
   </EntityType>
   <EntityType Name="CHITIETKETQUA">
     <Key>
-      <PropertyRef Name="MaCTKQ" />
+      <PropertyRef Name="STT" />
     </Key>
-    <Property Name="MaCTKQ" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MaCT" Type="varchar" MaxLength="10" />
     <Property Name="MaDB" Type="varchar" MaxLength="10" />
     <Property Name="LoaiBT" Type="varchar" MaxLength="1" />
@@ -69,7 +69,6 @@
     <Property Name="DoiChuNha" Type="varchar" MaxLength="10" />
     <Property Name="DoiKhach" Type="varchar" MaxLength="10" />
     <Property Name="NgayThiDau" Type="smalldatetime" />
-    <Property Name="GioThiDau" Type="time" Precision="7" />
     <Property Name="SanThiDau" Type="nvarchar" MaxLength="50" />
     <Property Name="MaVD" Type="varchar" MaxLength="10" />
   </EntityType>

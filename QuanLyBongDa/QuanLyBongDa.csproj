@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietKetQua.Designer.cs">
+      <DependentUpon>ChiTietKetQua.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\BANGXEPHANG.cs">
       <DependentUpon>QuanLyBongDa.tt</DependentUpon>
     </Compile>
@@ -136,6 +142,12 @@
     <Compile Include="ThemCauThu.Designer.cs">
       <DependentUpon>ThemCauThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemChiTietKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemChiTietKetQua.Designer.cs">
+      <DependentUpon>ThemChiTietKetQua.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemDoiBong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +166,9 @@
     <Compile Include="ThemLichThiDau.Designer.cs">
       <DependentUpon>ThemLichThiDau.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietKetQua.resx">
+      <DependentUpon>ChiTietKetQua.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KetQuaThiDau.resx">
       <DependentUpon>KetQuaThiDau.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemCauThu.resx">
       <DependentUpon>ThemCauThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemChiTietKetQua.resx">
+      <DependentUpon>ThemChiTietKetQua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemDoiBong.resx">
       <DependentUpon>ThemDoiBong.cs</DependentUpon>
@@ -215,12 +233,11 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="DAL\QuanLyBongDa.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>QuanLyBongDa.Context.cs</LastGenOutput>
       <DependentUpon>QuanLyBongDa.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBongDa.Context.cs</LastGenOutput>
     </Content>
     <Content Include="DAL\QuanLyBongDa.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
