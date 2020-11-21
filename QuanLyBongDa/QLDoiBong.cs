@@ -110,6 +110,16 @@ namespace QuanLyBongDa
             }
         }
 
+        private void dGVdoiBong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //                                          end
     }
 }
